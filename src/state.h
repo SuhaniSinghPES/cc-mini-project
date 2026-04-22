@@ -1,3 +1,5 @@
+// Author: Suhani Singh
+// Stores global filesystem state (paths, config)
 #pragma once
 
 #define FUSE_USE_VERSION 26

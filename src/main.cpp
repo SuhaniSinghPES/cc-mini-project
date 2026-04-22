@@ -1,3 +1,5 @@
+// Author: Suhani Singh
+// Description: Initializes FUSE filesystem and maps operations
 #include "state.h"
 #include "path.h"
 #include "cow.h"
@@ -26,7 +28,7 @@ static struct fuse_operations ops = {
 static void usage(const char* prog) {
     fprintf(stderr, "Usage: %s <lowerdir> <upperdir> <mountpoint> [FUSE options]\n", prog);
 }
-
+// Validate command line arguments
 int main(int argc, char* argv[]) {
     if (argc < 4) {
         usage(argv[0]);
